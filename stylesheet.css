@@ -1,0 +1,119 @@
+@font-face {
+	font-family: 'Snowy';
+	src:url("CSS/Fonts/Snowy/CFSnowBall-Regular.ttf") format("truetype");
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	line-height: 0.9;
+	background-image: linear-gradient(to bottom, deepskyblue, lightblue);
+	font-family: Arial, sans-serif;
+}
+/*region: navigation bar*/
+nav {
+	overflow: auto;
+	background-color: #202020;
+	top: 0;
+	width: 100%;
+	display: block;
+	position: fixed;
+}
+nav a {
+	padding: 18px 18px;
+	text-decoration: none;
+	color: white;
+	font-size: 125%;
+	float: left;
+}
+a:hover {
+	background-color: #555;
+}
+/*endregion*/
+
+/*region: headlines*/
+.huge-headline {
+		font-size: 400%;
+		text-align: center;
+		font-family: "Snowy";
+		padding-top: 72px;
+		padding-bottom: 40px;
+		text-shadow: 2px 2px;
+}
+.headline {
+	text-align: center;
+	font-size: 300%;
+	font-family: "Snowy";
+	padding-top: 40px;
+}
+.sub-headline {
+	line-height: 0.5;
+	font-size: 130%;
+	margin-left: 1%;
+	text-align: center;
+	padding-bottom: 35px;
+}
+/*endregion*/
+/*region animations*/
+.spinning-image {
+	width: 250px;
+	float: right;
+	-o-animation:spin 4s linear infinite;
+	-webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-o-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+/*endregion*/
+img {
+	width: 500px;
+	border-radius: 25px;
+}
+section > a {
+	font-size: 175%;
+}
+img, ul li, p, h2, h3, h4 {
+	margin-left: 1%;
+}
+a.current-page {
+	background-color: deepskyblue;
+	color: black;
+	font-weight: bold;
+}
+q {
+  padding-left: 70px;
+  font-style: italic;
+}
+blockquote {
+  padding-left: 30px;
+  font-style: italic;
+  line-height: 1.2;
+}
+ul, p, dt, ol {
+	line-height: 2;
+}
+dd {
+	line-height: 1.5;
+}
+.list-without-decoration {
+	list-style-type: none;
+	padding-left: 4px;
+}
+#changelog {
+	float: right;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	text-decoration: none;
+	color: black;
+	font-size: 125%;
+}
+/*region: linear-gradient-problem-solvers*/
+#linear-gradient-problem-solver {
+ padding-bottom: 80px;
+}
+#linear-gradient-problem-solver-v2{
+	padding-bottom: 372px;
+}
+/*endregion*/
