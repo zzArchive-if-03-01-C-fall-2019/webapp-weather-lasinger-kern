@@ -2,14 +2,16 @@
 
 const input = document.querySelector('.input');
 const name = document.querySelector('.name');
-const temp = document.querySelector('.temp');
-const desc = document.querySelector('.desc');
-const cntry = document.querySelector('.cntry');
-const hum = document.querySelector('.hum');
-const clouds = document.querySelector('.clouds'); //???
+const temperature = document.querySelector('.temperature');
+const description = document.querySelector('.description');
+const country = document.querySelector('.country');
+const humidity = document.querySelector('.humidity');
+const windspeed = document.querySelector('.windspeed');
+const sunrise = document.querySelector('.sunrise');
+const sunset = document.querySelector('.sunset');
 const button= document.querySelector('.button');
 const apiKey = "119b6b49d1cba0373cac83388df19af2";
-let temperatureValue, nameValue, descriptionValue, humidityValue, countryValue; //add sunrise, sunset
+let temperatureValue, nameValue, descriptionValue, humidityValue, countryValue, windspeedValue, sunriseValue, sunsetValue;
 
 
 button.addEventListener('click', function(){
@@ -18,16 +20,25 @@ button.addEventListener('click', function(){
     .then(data => {
       nameValue = data['name'];
       temperatureValue = data['main']['temp'];
-      temperatureValue = Math.round(tempValue - 273,16);
       descriptionValue = data['weather'][0]['description'];
       humidityValue = data['main']['humidity'];
-      countryValue = data['sys'][2];
+      countryValue = data['sys']['country'];
+      windspeedValue = data['wind']['speed'];
+      sunriseValue = data['sys']['sunrise'];
+      sunsetValue = data['sys']['sunset'];
+
+      temperatureValue = Math.round(temperatureValue - 273,16);
+      sunriseValue = new Date(sunriseValue * 1000);
+      sunsetValue = new Date(sunsetValue * 1000);
 
       name.innerHTML = "Name: "+nameValue;
-      cntry.innerHTML = "Country: "+countryValue;
-      desc.innerHTML = "Description: "+descriptionValue;
-      hum.innerHTML = "Humidity: "+humidityValue;
-      temp.innerHTML = "Temperature: ~"+temperatureValue+" °C";
+      country.innerHTML = "Country: "+countryValue;
+      description.innerHTML = "Description: "+descriptionValue;
+      humidity.innerHTML = "Humidity: "+humidityValue;
+      temperature.innerHTML = "Temperature: ~"+temperatureValue+" °C";
+      windspeed.innerHTML = "Windgeschwindigkeit: "+windspeedValue+" km/h";
+      sunrise.innerHTML = "Sonnenaufgang: "+sunriseValue.getHours()+":"+sunriseValue.getMinutes()+" Uhr";
+      sunset.innerHTML = "Sonnenuntergang: "+sunsetValue.getHours()+":"+sunsetValue.getMinutes()+" Uhr";
 
       input.value = "";
     })
