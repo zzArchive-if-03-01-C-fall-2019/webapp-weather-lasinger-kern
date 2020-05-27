@@ -1,5 +1,3 @@
-//https://www.youtube.com/watch?v=GXrDEA3SIOQ
-
 const input = document.querySelector('.input');
 const name = document.querySelector('.name');
 const temperature = document.querySelector('.temperature');
@@ -11,21 +9,20 @@ const sunrise = document.querySelector('.sunrise');
 const sunset = document.querySelector('.sunset');
 const button= document.querySelector('.button');
 const apiKey = "119b6b49d1cba0373cac83388df19af2";
-let temperatureValue, nameValue, descriptionValue, humidityValue, countryValue, windspeedValue, sunriseValue, sunsetValue;
 
 
 button.addEventListener('click', function(){
   fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid='+apiKey)
     .then(response => response.json())
     .then(data => {
-      nameValue = data['name'];
-      temperatureValue = data['main']['temp'];
-      descriptionValue = data['weather'][0]['description'];
-      humidityValue = data['main']['humidity'];
-      countryValue = data['sys']['country'];
-      windspeedValue = data['wind']['speed'];
-      sunriseValue = data['sys']['sunrise'];
-      sunsetValue = data['sys']['sunset'];
+      const nameValue = data['name'];
+      const descriptionValue = data['weather'][0]['description'];
+      const humidityValue = data['main']['humidity'];
+      const countryValue = data['sys']['country'];
+      const windspeedValue = data['wind']['speed'];
+      let temperatureValue = data['main']['temp'];
+      let sunriseValue = data['sys']['sunrise'];
+      let sunsetValue = data['sys']['sunset'];
 
       temperatureValue = Math.round(temperatureValue - 273,16);
       sunriseValue = new Date(sunriseValue * 1000);
@@ -36,9 +33,9 @@ button.addEventListener('click', function(){
       description.innerHTML = "Description: "+descriptionValue;
       humidity.innerHTML = "Humidity: "+humidityValue;
       temperature.innerHTML = "Temperature: ~"+temperatureValue+" °C";
-      windspeed.innerHTML = "Windgeschwindigkeit: "+windspeedValue+" km/h";
-      sunrise.innerHTML = "Sonnenaufgang: "+sunriseValue.getHours()+":"+sunriseValue.getMinutes()+" Uhr";
-      sunset.innerHTML = "Sonnenuntergang: "+sunsetValue.getHours()+":"+sunsetValue.getMinutes()+" Uhr";
+      windspeed.innerHTML = "Windspeed: "+windspeedValue+" km/h";
+      sunrise.innerHTML = "Sunrise: "+sunriseValue.getHours()+":"+sunriseValue.getMinutes()+" Uhr";
+      sunset.innerHTML = "Sunset: "+sunsetValue.getHours()+":"+sunsetValue.getMinutes()+" Uhr";
 
       input.value = "";
     })
