@@ -1,25 +1,34 @@
-
 //https://www.youtube.com/watch?v=GXrDEA3SIOQ
 
-var input = document.querySelector('.input_text');
-var main = document.querySelector('#name');
-var temp = document.querySelector('.temp');
-var desc = document.querySelector('.desc');
-var clouds = document.querySelector('.clouds');
-var button= document.querySelector('.submit');
+const input = document.querySelector('.input');
+const name = document.querySelector('.name');
+const temp = document.querySelector('.temp');
+const desc = document.querySelector('.desc');
+const cntry = document.querySelector('.cntry');
+const hum = document.querySelector('.hum');
+const clouds = document.querySelector('.clouds'); //???
+const button= document.querySelector('.button');
+const apiKey = "119b6b49d1cba0373cac83388df19af2";
+let temperatureValue, nameValue, descriptionValue, humidityValue, countryValue; //add sunrise, sunset
 
 
-button.addEventListener('click', function(name){
-  fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=50a7aa80fa492fa92e874d23ad061374')
+button.addEventListener('click', function(){
+  fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid='+apiKey)
     .then(response => response.json())
     .then(data => {
-      var tempValue = data['main']['temp'];
-      var nameValue = data['name'];
-      var descValue = data['weather'][0]['description'];
+      nameValue = data['name'];
+      temperatureValue = data['main']['temp'];
+      temperatureValue = Math.round(tempValue - 273,16);
+      descriptionValue = data['weather'][0]['description'];
+      humidityValue = data['main']['humidity'];
+      countryValue = data['sys'][2];
 
-      main.innerHTML = nameValue;
-      desc.innerHTML = "Desc - "+descValue;
-      temp.innerHTML = "Temp - "+tempValue;
+      name.innerHTML = "Name: "+nameValue;
+      cntry.innerHTML = "Country: "+countryValue;
+      desc.innerHTML = "Description: "+descriptionValue;
+      hum.innerHTML = "Humidity: "+humidityValue;
+      temp.innerHTML = "Temperature: ~"+temperatureValue+" °C";
+
       input.value = "";
     })
     .catch(err => alert("Invalid city name"));

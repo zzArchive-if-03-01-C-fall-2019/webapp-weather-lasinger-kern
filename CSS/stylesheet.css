@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Snowy';
-	src:url("CSS/Fonts/Snowy/CFSnowBall-Regular.ttf") format("truetype");
+	src:url("../CSS/Fonts/Snowy/CFSnowBall-Regular.ttf") format("truetype");
 }
 body {
 	margin: 0px;
@@ -74,7 +74,7 @@ img {
 section > a {
 	font-size: 175%;
 }
-img, ul li, p, h2, h3, h4 {
+img, ul, li, p, h2, h3, h4, input {
 	margin-left: 1%;
 }
 a.current-page {
@@ -117,3 +117,6 @@ dd {
 	padding-bottom: 372px;
 }
 /*endregion*/
+input[type="text"] {
+
+}
