@@ -125,3 +125,15 @@ dd {
 	background-image: url("../Images/Worldmap.png");
 }
 /*endregion*/
+input[type=text] {
+	margin-top: 100px;
+	width: 20%;
+	padding: 12px;
+	border: 2px solid black;
+	font-size: 1.4em;
+}
+button {
+	padding: 12px 45px;
+	font-size: 1.4em;
+	border: 2px solid black;
+}
