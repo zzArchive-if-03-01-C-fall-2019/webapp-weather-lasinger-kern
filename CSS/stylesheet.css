@@ -125,8 +125,10 @@ dd {
 	background-image: url("../Images/Worldmap.png");
 }
 /*endregion*/
+/*region input and button*/
 input[type=text] {
 	margin-top: 100px;
+	margin-left: 30px;
 	width: 20%;
 	padding: 12px;
 	border: 2px solid black;
@@ -137,3 +139,15 @@ button {
 	font-size: 1.4em;
 	border: 2px solid black;
 }
+/*endregion*/
+/*region webapp output*/
+.name, .country, .description, .temperature, .humidity, .windspeed, .sunrise, .sunset {
+	font-size: 1.4em;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+.name {	/*avoiding lots of black spots due to islands around greece*/
+	padding-top: 50px;
+}
+/*endregion*/
