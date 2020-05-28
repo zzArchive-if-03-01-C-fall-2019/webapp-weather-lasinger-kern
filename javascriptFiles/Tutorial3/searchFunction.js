@@ -11,6 +11,12 @@ const button= document.querySelector('.button');
 const apiKey = "119b6b49d1cba0373cac83388df19af2";
 let sunriseHour, sunriseMinute, sunsetHour, sunsetMinute;
 
+input.addEventListener('keyup', function(event) {
+  if(event.keyCode === 13) {
+    button.click();
+  }
+})
+
 button.addEventListener('click', function(){
   fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid='+apiKey)
     .then(response => response.json())
