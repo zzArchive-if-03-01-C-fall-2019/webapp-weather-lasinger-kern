@@ -1,5 +1,5 @@
-const input = document.querySelector('.input');
-const button= document.querySelector('.button');
+const input = document.getElementById("input");
+const button = document.getElementById("button");
 
 input.addEventListener('keyup', function(event) {
   if(event.keyCode === 13) {
@@ -43,14 +43,14 @@ function calculateSunMinute(sunValue) {
 }
 
 function printData(nameValue, countryValue, descriptionValue, humidityValue, temperatureValue, windspeedValue, sunriseHour, sunriseMinute, sunsetHour, sunsetMinute) {
-  const name = document.querySelector('.name');
-  const temperature = document.querySelector('.temperature');
-  const description = document.querySelector('.description');
-  const country = document.querySelector('.country');
-  const humidity = document.querySelector('.humidity');
-  const windspeed = document.querySelector('.windspeed');
-  const sunrise = document.querySelector('.sunrise');
-  const sunset = document.querySelector('.sunset');
+  const name = document.getElementById("name");
+  const temperature = document.getElementById("temperature");
+  const description = document.getElementById("description");
+  const country = document.getElementById("country");
+  const humidity = document.getElementById("humidity");
+  const windspeed = document.getElementById("windspeed");
+  const sunrise = document.getElementById("sunrise");
+  const sunset = document.getElementById("sunset");
 
   name.innerHTML = "Name: "+nameValue;
   country.innerHTML = "Country: "+countryValue;

@@ -141,7 +141,7 @@ button {
 }
 /*endregion*/
 /*region webapp output*/
-.name, .country, .description, .temperature, .humidity, .windspeed, .sunrise, .sunset {
+#name, #country, #description, #temperature, #humidity, #windspeed, #sunrise, #sunset {
 	font-size: 1.4em;
 	text-align: center;
 	color: black;
