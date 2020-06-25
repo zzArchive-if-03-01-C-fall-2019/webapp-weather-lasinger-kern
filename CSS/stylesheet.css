@@ -151,3 +151,13 @@ button {
 	padding-top: 50px;
 }
 /*endregion*/
+table {
+  border: 1px solid black;
+	style="background-color:#00FF00"
+}
+td {
+	border: 1px solid black;
+}
+tr {
+	border: 1px solid black;
+}
