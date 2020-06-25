@@ -1,0 +1,428 @@
+﻿MAP			
+All regions	0	0	100
+			
+SETTINGS			
+LANGUAGE	1		
+SAVECAT	FALSE		
+MAP-ID	iso-a3		
+LAYOUT	GRAPH=3,0,9,15,TRUE&IND=0,0,3,15,TRUE&SEL=10,15,2,23,TRUE&STORY=0,42,3,8,FALSE&MAP=0,15,10,23,TRUE&TABLE=11,38,1,3,FALSE&TIME=0,38,7,4,TRUE		
+TOPMENU	TRUE		
+SEARCH	TRUE		
+HELP	FALSE		
+POPUP-M	TRUE		
+V-NODATA	FALSE		
+DEVMODE	FALSE		
+RESIZABLE	FALSE		
+V-IND-B	FALSE		
+V-I-IND	FALSE		
+V-I-MAP	FALSE		
+V-I-GRAPH	FALSE		
+V-I-SELECT	FALSE		
+V-I-STORY	FALSE		
+V-I-TABLE	FALSE		
+V-I-FULLSCR	TRUE		
+V-I-PRINT	FALSE		
+V-I-RESET	TRUE		
+V-I-EXT	FALSE		
+SITE-L2	-		
+MAPTITLE	TRUE		
+MAP-TXT-OVER	FALSE		
+MAP-WHEEL	FALSE		
+MAP-EXPS	2.5		
+MAP-FONT	11		
+MAP-TXT	3		
+MAP-TXT-L	2		
+ZOOM-INCR	1.15		
+MAP-CLR0	0x08519C		
+MAP-CLR1	0x3182BD		
+MAP-CLR2	0x6BAED6		
+MAP-CLR3	0xBDD7E7		
+MAP-CLR4	0xEFF3FF		
+MAP-CLR5	no color		
+MAP-CLR6	no color		
+MAP-CLR7	no color		
+MAP-CLR8	no color		
+GRAPH	1		
+GRTITLE	TRUE		
+GRAPH-FONT	11		
+GR-CONNECT	FALSE		
+DOT-S	3		
+DOT-S2	5		
+TIMERANGE	TRUE		
+V-I-MAX	TRUE		
+V-I-COL	TRUE		
+V-I-BAR	TRUE		
+V-I-LINE	TRUE		
+V-I-SCAT	TRUE		
+V-I-CLN	TRUE		
+V-I-CMK	TRUE		
+V-I-ILINE	TRUE		
+V-I-STA	TRUE		
+V-I-SORT	TRUE		
+FORMAT	2		
+EXP-PDF	FALSE		
+T_SEP	.		
+FONT-S	12		
+FONT-P-S	12		
+DECPLACES	1		
+DECPLACES2	2		
+MAP-TITLE	auto		
+MAP-TITLE-S	19		
+M-DOT	TRUE		
+M-DOT-SIZE	6		
+M-DOT-COORD	-		
+TXT-COORD	601[x2446.65y2466.4]401[x2479.4y2439.6]701[x2422.9y2479.15]201[x2267.8y2639.5]801[x2348.75y2671.65]101[x2457.3y2467.35]702[x2439.15y2562.9]703[x2404.65y2582.85]301[x2408.05y2450.5]602[x2383.65y2492.15]202[x2364.6y2553.65]603[x2438.65y2451.1]704[x2397.3y2520.1]102[x2465.9y2489.55]604[x2423.9y2456.4]802[x2313.9y2663.35]203[x2213.3y2578.1]705[x2424.8y2493.25]605[x2398.9y2462.55]706[x2436.65y2517.3]606[x2415.1y2421.9]707[x2373.8y2545.4]607[x2387.9y2516.4]803[x2315.15y2623.65]204[x2353.15y2579.05]402[x2456.9y2434.15]804[x2315y2663.35]302[x2387.8y2488.5]303[x2380.15y2520]304[x2410y2477.65]305[x2385.6y2496.1]306[x2413.95y2472.7]307[x2382.65y2501]708[x2439.65y2528.8]403[x2519.9y2440.15]404[x2445.35y2415.15]805[x2366.6y2601.05]405[x2471.05y2423.85]709[x2462.4y2507.6]710[x2462y2493.35]205[x2217.9y2656.25]711[x2446.55y2511.9]608[x2386.3y2481.65]609[x2437.4y2472.1]206[x2326.25y2552.6]103[x2460.85y2462.55]104[x2466.1y2469.05]406[x2480.1y2411.4]806[x2331.9y2655.9]501[x2442.8y2474.4]807[x2334.65y2592.4]207[x2330.05y2598.35]808[x2322.35y2646.1]208[x2306.65y2591.15]712[x2421.8y2528.15]713[x2445.3y2490.65]209[x2318.5y2572.15]210[x2298.15y2577.1]809[x2298.9y2607.4]610[x2397.6y2487.9]810[x2355.25y2591.55]714[x2464.55y2531.9]211[x2221.4y2641.15]811[x2353.05y2626.9]715[x2418.15y2546.6]212[x2277y2580.8]716[x2414.1y2504]213[x2295.1y2612.3]308[x2396.8y2467.65]214[x2281.15y2534.8]215[x2328.5y2535]611[x2411.55y2481.9]612[x2442.35y2438.85]216[x2347.15y2566.65]812[x2303.75y2671.55]105[x2460.15y2478.65]309[x2379.85y2475.25]717[x2472.05y2526.35]613[x2391.9y2499.9]813[x2334.1y2610.4]217[x2299.8y2651.9]218[x2332.75y2575.4]718[x2395.6y2535.05]719[x2407.85y2562.4]219[x2349.65y2550.75]614[x2404.05y2451.35]615[x2400.3y2457.4]814[x2299.55y2654.15]720[x2443.35y2500.4]616[x2453.05y2453.05]617[x2416.65y2462.65]220[x2298.25y2562.3]815[x2342.9y2645.4]721[x2396.05y2497.1]106[x2455y2484.8]816[x2355.65y2656.35]310[x2400.3y2457.45]722[x2402.4y2554.6]221[x2371.85y2534.1]107[x2447.4y2459.9]723[x2376.8y2560.05]724[x2453.65y2522.3]725[x2487.6y2507.9]222[x2331.1y2584.15]817[x2327.65y2622.8]108[x2465.05y2449.9]311[x2364.75y2488.9]618[x2419.15y2471.55]223[x2279.4y2567.15]726[x2455.5y2538.4]312[x2396.8y2475.85]727[x2446.05y2550.65]224[x2244.05y2624.25]619[x2396.15y2469.8]225[x2309.65y2539.6]109[x2458.8y2471.25]226[x2304.9y2551.6]728[x2370.35y2591.85]729[x2371.55y2571.6]730[x2447.65y2475.8]731[x2437.05y2541.65]818[x2360.9y2642.9]732[x2427.8y2508.9]819[x2327.6y2635.3]620[x2427.15y2447.4]733[x2472.75y2516.5]227[x2370.65y2518.35]820[x2338.9y2599.65]734[x2480.25y2501.1]228[x2329.55y2563.25]407[x2496.4y2436.35]229[x2347.65y2591.4]821[x2298.05y2669.15]313[x2358.85y2505.25]110[x2452.85y2475.1]822[x2332.15y2682]823[x2355.3y2611.65]621[x2429.8y2463.5]622[x2428.65y2439.6]824[x2336.35y2652.6]825[x2331.65y2662.9]623[x2378.6y2506.05]826[x2377.55y2669.9]827[x2322.6y2673.05]735[x2417.85y2535.15]624[x2438.25y2457.3]828[x2376.65y2657.25]625[x2409.65y2440.35]736[x2426.05y2555.4]230[x2244.4y2601.4]829[x2304.15y2661.5]231[x2353.15y2524.65]232[x2326.9y2545]title[x-125.2y192.1]		
+MAP-TXT-ALL	FALSE		
+MAP-TXT-Z	200		
+MAP-TXT-S	9		
+MAP-TXT-S2	1		
+REGION-L	-		
+MAP-SYMB-S	100		
+MAP-SYMB-TR	20		
+MAP-BRDR	0xFFFFFF		
+MAP-NTRL	0xEEEEEE		
+MAP-OVER	0xFFFF00		
+REGION	1		
+VIEW0	TRUE		
+VIEW1	1		
+VIEW2	FALSE		
+VIEW3	TRUE		
+VIEW4	1		
+VIEW5	TRUE		
+VIEW8	TRUE		
+GR-LABELS	1		
+GR-DV	4		
+GR-TXT-S	100		
+GR-TXT-S2	100		
+GR-DOT-S	100		
+ANI-TIME	0.8		
+V-I-IND	FALSE		
+V-I-INDG	FALSE		
+V-IND-O	FALSE		
+V-I-SYMB	TRUE		
+V-I-OPTION	TRUE		
+V-I-FULLSCR	TRUE		
+T_GR-OPT	Graph options		
+T_XAX	x-axis		
+T_YAX	y-axis		
+T_LAX	left axis		
+T_RAX	right axis		
+T_BUB	bubble size		
+T_GR-SORT	Sort bar chart		
+T_GR-SORTL	Sort labels		
+T_GR-SORT1	Sort lowest to highest		
+T_GR-SORT2	Sort highest to lowest		
+T_GR-SORT3	Sort highest to lowest - from middle		
+T_GR-SORT4	Sort alphabetical		
+T_GR-SCALE1	Bubble size		
+T_GR-SCALE2	scale according to indicator		
+T_GR-SCALE3	Same size		
+T_GR-SCAT	Show scatter plot		
+T_GR-LINE	Show time series graph		
+T_GR-COL	Show column chart		
+T_GR-BAR	Show bar chart		
+T_GR-col	Show vertical bubble chart		
+T_GR-SIZE1	Full screen graph		
+T_GR-SIZE2	Reduce graph size		
+T_TAR	Target		
+T_GR-START	-		
+T_GR-YAXIS	Please select a y-axis indicator		
+T_GRAPH	Graph/Chart		
+T_OPTIONS	Options and appearance		
+T_EXT	Go to full data visualisation tool		
+T_LINK	Copy and share link to current indicator		
+T_LINK2	Link copied		
+T_FULLSCR1	Switch to full screen mode		
+T_SEL	Selection panel		
+T_FULLSCR2	Close full screen		
+T_CAT	Category		
+T_CAT2	Select a category		
+T_REG	Select a region		
+T_REG1	All regions		
+T_REG2	Custom region		
+T_SEL-INDIC	Select an indicator		
+T_BOOKM1	Bookmarked indicator		
+T_BOOKM2	Bookmark selected indicator		
+T_SOURCE1	Source		
+T_SELECT	Create a custom region with selection		
+T_SELECTA	Select all		
+T_SHIFT	Hold the SHIFT key to select multiple regions		
+T_REMOVE	Remove selected		
+T_DESEL	Deselect all		
+T_INDG	Display multiple indicators in the line graph for the selected map area  		
+T_REFRESH	Refresh selection list		
+T_HEADER	Map area		
+T_HEADERG	Region		
+T_TABLE-C1	Copy table data		
+T_TABLE-C2	Go to Excel and select - Edit -> Paste. You can also paste the data in a text editor such as Notepad; save the file with the extension .html and open the file in a Web Browser.		
+T_TABLE-S1	Save (export) table data		
+T_EXP-M	Export map		
+T_EXP-D	Export data		
+T_EXP-G	Export graph		
+T_COPYD	Copy data		
+T_COPYML	Copy map legend		
+T_COPYMC	Copy map coordinates		
+T_CLOSE	Close StatPlanet		
+T_CLOSE2	Close		
+T_MENU	-		
+T_EDIT	Edit		
+T_LATEST	Latest available		
+T_LOADING	Loading data		
+T_LOAD2	Loading		
+T_MLN	million		
+T_NAME	Name		
+T_OPTIONS-M	More options		
+T_ND	No data		
+T_OK	OK		
+T_RESET	Reset		
+T_RESET2	Clear selection and reset application to startup state		
+T_SELR	Select all within this data range		
+T_SEARCH	Search		
+T_TND	thousand		
+T_PLAY	Play from beginning		
+T_STOP	Stop		
+T_YEAR	Year		
+T_H-IND	Currently selected indicator		
+T_H-CAT	Browse all indicators through the dropdown menu		
+T_H-REG	Select a region		
+T_H-YR	Select a time-period or play animation over time		
+			
+NAMES			
+Afghanistan			
+Albania			
+Algeria			
+Andorra			
+Angola			
+Anguilla			
+Antigua and Barbuda			
+Argentina			
+Armenia			
+Aruba			
+Australia			
+Austria			
+Azerbaijan			
+Bahamas			
+Bahrain			
+Bangladesh			
+Barbados			
+Belarus			
+Belgium			
+Belize			
+Benin			
+Bermuda			
+Bhutan			
+Bolivia			
+Bosnia and Herzegovina			
+Botswana			
+Brazil			
+British Virgin Islands			
+Brunei Darussalam			
+Bulgaria			
+Burkina Faso			
+Burundi			
+Cambodia			
+Cameroon			
+Canada			
+Cape Verde			
+Cayman Islands			
+Cent African Rep			
+Chad			
+Chile			
+China			
+Colombia			
+Comoros			
+Congo			
+Cook Islands			
+Costa Rica			
+Côte d’Ivoire			
+Croatia			
+Cuba			
+Cyprus			
+Czech Republic			
+People's Republic of Korea			
+Dem. Rep. of Congo			
+Denmark			
+Djibouti			
+Dominica			
+Dominican Republic			
+Ecuador			
+Egypt			
+El Salvador			
+Equatorial Guinea			
+Eritrea			
+Estonia			
+Ethiopia			
+Fiji			
+Finland			
+France			
+Gabon			
+Gambia			
+Georgia			
+Germany			
+Ghana			
+Gibraltar			
+Greece			
+Grenada			
+Guatemala			
+Guinea			
+Guinea-Bissau			
+Guyana			
+Haiti			
+Holy See			
+Honduras			
+Hong Kong			
+Hungary			
+Iceland			
+India			
+Indonesia			
+Iran			
+Iraq			
+Ireland			
+Israel			
+Italy			
+Jamaica			
+Japan			
+Jordan			
+Kazakhstan			
+Kenya			
+Kiribati			
+Kuwait			
+Kyrgyzstan			
+Lao People's Dem. Rep.			
+Latvia			
+Lebanon			
+Lesotho			
+Liberia			
+Libyan Arab Jamahiriya			
+Liechtenstein			
+Lithuania			
+Luxembourg			
+Macao, China			
+Madagascar			
+Malawi			
+Malaysia			
+Maldives			
+Mali			
+Malta			
+Marshall Islands			
+Mauritania			
+Mauritius			
+Mexico			
+Micronesia (Federated States of)			
+Monaco			
+Mongolia			
+Montenegro			
+Montserrat			
+Morocco			
+Mozambique			
+Myanmar (Burma)			
+Namibia			
+Nauru			
+Nepal			
+Netherlands			
+Netherlands Antilles			
+New Zealand			
+Nicaragua			
+Niger			
+Nigeria			
+Niue			
+Norway			
+Oman			
+Pakistan			
+Palau			
+Palestinian Territories			
+Panama			
+Papua New Guinea			
+Paraguay			
+Peru			
+Philippines			
+Poland			
+Portugal			
+Qatar			
+Rep. of Korea			
+Rep. of Moldova			
+Romania			
+Russian Federation			
+Rwanda			
+Saint Kitts and Nevis			
+Saint Lucia			
+Saint Vincent and the Grenadines			
+Samoa			
+San Marino			
+Sao Tome and Principe			
+Saudi Arabia			
+Senegal			
+Serbia			
+Seychelles			
+Sierra Leone			
+Singapore			
+Slovakia			
+Slovenia			
+Solomon Islands			
+Somalia			
+South Africa			
+Spain			
+Sri Lanka			
+Sudan			
+Suriname			
+Swaziland			
+Sweden			
+Switzerland			
+Syrian Arab Republic			
+Tajikistan			
+Thailand			
+FYR of Macedonia			
+Timor-Leste			
+Togo			
+Tokelau			
+Tonga			
+Trinidad and Tobago			
+Tunisia			
+Turkey			
+Turkmenistan			
+Turks and Caicos Islands			
+Tuvalu			
+Uganda			
+Ukraine			
+United Arab Emirates			
+United Kingdom			
+Tanzania			
+United States			
+Uruguay			
+Uzbekistan			
+Vanuatu			
+Venezuela			
+Vietnam			
+Yemen			
+Zambia			
+Zimbabwe			
+French Guiana			
+Western Sahara			
+Taiwan			
+Greenland			
+Zanzibar			
+Svalbard and Jan Mayen			
+Puerto Rico			
+Isle of Man			
+Jersey			
+Guernsey			
+US Virgin Islands			
+Kosovo			
+South Sudan			
+FrenchPolynesia			
+Guadeloupe			
+Guam			
+Martinique			
+Mayotte			
+NewCaledonia			
+Reunion			
+Hong Kong			
+Channel Islands			
+Faeroe Islands			
+Falkland Islands			
+Northern Mariana Islands			
+Pitcairn			
+Saint Helena			
+Saint Pierre and Miquelon			
+Wallis and Futuna Islands			
+West Bank and Gaza			

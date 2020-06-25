@@ -122,7 +122,8 @@ dd {
 	background-image: linear-gradient(to bottom, deepskyblue, lightblue);
 }
 .webapp-background {
-	background-image: url("../Images/Worldmap.png");
+	/*background-image: url("../Images/Worldmap.png");*/
+	background-color: #535364;
 }
 /*endregion*/
 /*region input and button*/
@@ -151,3 +152,8 @@ button {
 	padding-top: 50px;
 }
 /*endregion*/
+#mapdiv {
+	width: 1519px;
+	height: 800px;
+
+}
