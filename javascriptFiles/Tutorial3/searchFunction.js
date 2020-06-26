@@ -55,7 +55,7 @@ function printData(nameValue, countryValue, descriptionValue, humidityValue, tem
   name.innerHTML = "Name: "+nameValue;
   country.innerHTML = "Country: "+countryValue;
   description.innerHTML = "Description: "+descriptionValue;
-  humidity.innerHTML = "Humidity: "+humidityValue;
+  humidity.innerHTML = "Humidity: "+humidityValue+" %";
   temperature.innerHTML = "Temperature: ~"+temperatureValue+" °C";
   windspeed.innerHTML = "Windspeed: "+windspeedValue+" km/h";
   sunrise.innerHTML = "Sunrise: "+sunriseHour+":"+sunriseMinute+" Uhr";
