@@ -122,7 +122,8 @@ dd {
 	background-image: linear-gradient(to bottom, deepskyblue, lightblue);
 }
 .webapp-background {
-	background-image: url("../Images/Worldmap.png");
+	/*background-image: url("../Images/Worldmap.png");*/
+	background-color: #535364;
 }
 /*endregion*/
 /*region input and button*/
@@ -151,16 +152,8 @@ button {
 	padding-top: 50px;
 }
 /*endregion*/
-table {
-  border: 1px solid black;
-	style="background-color:#00FF00"
-}
-td {
-	border: 1px solid black;
-}
-tr {
-	border: 1px solid black;
-}
-.tablestyle{
-	text-align: center;
+#mapdiv {
+	width: 1519px;
+	height: 800px;
+
 }
