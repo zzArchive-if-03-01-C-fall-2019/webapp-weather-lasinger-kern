@@ -25,124 +25,193 @@ polygonSeries.data = [{
   "capital": "Mexico city"
 },
 {
-  "id": "AND",
+  "id": "AD",
   "capital": "ANDORRA LA VELLA"
 },
 {
-  "id": "AUT",
+  "id": "AT",
   "capital": "VIENNA"
 },
 {
-  "id": "BEL",
+  "id": "BE",
   "capital": "BRUSSELS"
 },
 {
-  "id": "BIH",
+  "id": "BA",
   "capital": "SARAJEVO"
 },
 {
-  "id": "BGR",
+  "id": "BG",
   "capital": "SOFIA"
 },
-
 {
-  "id": "HRV",
+  "id": "HR",
   "capital": "ZAGREB"
 },{
-  "id": "CYP",
+  "id": "CY",
   "capital": "NICOSIA"
 },{
-  "id": "CZE",
+  "id": "CZ",
   "capital": "PRAGUE"
 },{
-  "id": "DNK",
+  "id": "DK",
   "capital": "COPENHAGEN"
 },{
-  "id": "EST",
+  "id": "EE",
   "capital": "TALLINN"
 },{
-  "id": "FIN",
+  "id": "FI",
   "capital": "HELSINKI"
 },{
-  "id": "FRA",
+  "id": "FR",
   "capital": "PARIS"
 },{
-  "id": "DEU",
+  "id": "DE",
   "capital": "BERLIN"
 },{
-  "id": "HUN",
+  "id": "HU",
   "capital": "BUDAPEST"
 },{
-  "id": "ISL",
+  "id": "IS",
   "capital": "REYKJAVIK"
 },{
-  "id": "IRL",
+  "id": "IE",
   "capital": "DUBLIN"
 },{
-  "id": "ITA",
+  "id": "IT",
   "capital": "ROME"
 },{
-  "id": "LIE",
+  "id": "LI",
   "capital": "VADUZ"
 },{
-  "id": "LUX",
+  "id": "LU",
   "capital": "LUXEMBOURG"
 },{
-  "id": "MDA",
+  "id": "MD",
   "capital": "CHISINAU"
 },{
-  "id": "MCO",
+  "id": "MC",
   "capital": "MONACO"
 },{
-  "id": "MNE",
+  "id": "ME",
   "capital": "PODGORICA"
 },{
-  "id": "NLD",
+  "id": "NL",
   "capital": "AMSTERDAM"
 },{
-  "id": "NOR",
+  "id": "NO",
   "capital": "OSLO"
 },{
-  "id": "ROU",
+  "id": "RO",
   "capital": "BUCHAREST"
 },{
-  "id": "RUS",
+  "id": "RU",
   "capital": "MOSCOW"
 },{
-  "id": "SRB",
+  "id": "RS",
   "capital": "BELGRADE"
 },{
-  "id": "SVK",
+  "id": "SK",
   "capital": "BRATISLAVA"
 },{
-  "id": "SVN",
+  "id": "SI",
   "capital": "LJUBLJANA"
 },{
-  "id": "ESP",
+  "id": "ES",
   "capital": "MADRID"
 },{
-  "id": "SWE",
+  "id": "SE",
   "capital": "STOCKHOLM"
 },{
-  "id": "CHE",
+  "id": "CH",
   "capital": "BERN"
 },{
-  "id": "UKR",
+  "id": "UA",
   "capital": "KIEV"
 },{
-  "id": "GBR",
+  "id": "GB",
   "capital": "LONDON"
 },{
-  "id": "VAT",
+  "id": "VA",
   "capital": "VATICAN CITY"
-},
-{
-  "id": "POL",
+},{
+  "id": "PL",
   "capital": "WARSAW"
-},
-{
-  "id": "PRT",
-  "capital": "LISBON"
+},{
+  "id": "GL",
+  "capital": "COPENHAGEN"
+},{
+  "id": "PT",
+  "capital": "LISBON" //europe end
+},{
+  "id": "CU",
+  "capital": "HAVANA"
+},{
+  "id": "BR",
+  "capital": "BRASILIA"
+},{
+  "id": "AR",
+  "capital": "BUENOS AIRES"
+},{
+  "id": "VE",
+  "capital": "CARACAS"
+},{
+  "id": "CL",
+  "capital": "SANTIAGO"
+},{
+  "id": "KZ",
+  "capital": "NUR-SULTAN"
+},{
+  "id": "CN",
+  "capital": "BEIJING"
+},{
+  "id": "KP",
+  "capital": "PYONGYANG"
+},{
+  "id": "KR",
+  "capital": "SEOUL"
+},{
+  "id": "JP",
+  "capital": "TOKYO"
+},{
+  "id": "ID",
+  "capital": "JAKARTA"
+},{
+  "id": "AU",
+  "capital": "CANBERRA"
+},{
+  "id": "NZ",
+  "capital": "WELLINGTON"
+},{
+  "id": "IN",
+  "capital": "NEW DELHI"
+},{
+  "id": "BD",
+  "capital": "DHAKA"
+},{
+  "id": "IR",
+  "capital": "TEHRAN"
+},{
+  "id": "IQ",
+  "capital": "BAGHDAD"
+},{
+  "id": "SA",
+  "capital": "RIYADH"
+},{
+  "id": "EG",
+  "capital": "CAIRO"
+},{
+  "id": "ET",
+  "capital": "ADDIS ABABA"
+},{
+  "id": "LY",
+  "capital": "TRIPOLI"
+},{
+  "id": "ZA",
+  "capital": "BLOEMFONTEIN"
+},{
+  "id": "MG",
+  "capital": "ANTANANARIVO"
 },]
 
 // Configure series
@@ -164,9 +233,6 @@ polygonTemplate.events.on("hit", function(ev) {
 // Create hover state and set alternative fill color
 var hs = polygonTemplate.states.create("hover");
 hs.properties.fill = am4core.color("#5A9367");
-
-// Remove Antarctica
-polygonSeries.exclude = ["AQ"];
 
 // Add zoom control
 chart.zoomControl = new am4maps.ZoomControl();
