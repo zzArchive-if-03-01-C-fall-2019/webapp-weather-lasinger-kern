@@ -1,4 +1,4 @@
-const capitals = [][]
+//const capitals = [][]
 // Create map instance
 var chart = am4core.create("chartdiv", am4maps.MapChart)
 
