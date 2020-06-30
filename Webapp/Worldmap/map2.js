@@ -1,4 +1,3 @@
-//const capitals = [][]
 // Create map instance
 var chart = am4core.create("chartdiv", am4maps.MapChart)
 
@@ -20,10 +19,10 @@ polygonSeries.data = [{
   "capital": "Washington",
 }, {
   "id": "CA",
-  "color": am4core.color("#3F4B3B"),
+  "capital": "Toronto"
 }, {
   "id": "MX",
-  "color": am4core.color("#3F4B3B"),
+  "color": "Mexico city",
 }]
 
 // Configure series
