@@ -162,14 +162,14 @@ button {
 }
 #box {
 	background-color: #65D4E9;
-    position: relative;
-    width: 450px;
-    height: 450px;
-    left: 500px;
-    border: 1px solid black;
-    text-align: center;
-    border-radius: 225px;
-		z-index: -5;
+  position: relative;
+  width: 450px;
+  height: 450px;
+  left: 500px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 225px;
+	z-index: -5;
 }
 p.boxp {
 	margin-bottom: 10px;

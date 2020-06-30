@@ -17,34 +17,28 @@ polygonSeries.useGeodata = true;
 polygonSeries.data = [{
   "id": "US",
   "capital": "Washington"
-}, {
+},{
   "id": "CA",
   "capital": "Ottawa"
-}, {
+},{
   "id": "MX",
   "capital": "Mexico city"
-},
-{
+},{
   "id": "AD",
   "capital": "ANDORRA LA VELLA"
-},
-{
+},{
   "id": "AT",
   "capital": "VIENNA"
-},
-{
+},{
   "id": "BE",
   "capital": "BRUSSELS"
-},
-{
+},{
   "id": "BA",
   "capital": "SARAJEVO"
-},
-{
+},{
   "id": "BG",
   "capital": "SOFIA"
-},
-{
+},{
   "id": "HR",
   "capital": "ZAGREB"
 },{
