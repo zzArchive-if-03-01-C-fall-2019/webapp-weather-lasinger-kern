@@ -20,9 +20,10 @@ polygonSeries.data = [{
   "capital": "Washington",
 }, {
   "id": "CA",
-  "capital": "Toronto"
+  "color": am4core.color("#3F4B3B"),
 }, {
   "id": "MX",
+  "color": am4core.color("#3F4B3B"),
 }]
 
 // Configure series
