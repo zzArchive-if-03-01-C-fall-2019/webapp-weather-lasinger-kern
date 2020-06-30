@@ -16,14 +16,134 @@ polygonSeries.useGeodata = true;
 // Add some custom data
 polygonSeries.data = [{
   "id": "US",
-  "capital": "Washington",
+  "capital": "Washington"
 }, {
   "id": "CA",
-  "capital": "Toronto"
+  "capital": "Ottawa"
 }, {
   "id": "MX",
-  "color": "Mexico city",
-}]
+  "capital": "Mexico city"
+},
+{
+  "id": "AND",
+  "capital": "ANDORRA LA VELLA"
+},
+{
+  "id": "AUT",
+  "capital": "VIENNA"
+},
+{
+  "id": "BEL",
+  "capital": "BRUSSELS"
+},
+{
+  "id": "BIH",
+  "capital": "SARAJEVO"
+},
+{
+  "id": "BGR",
+  "capital": "SOFIA"
+},
+
+{
+  "id": "HRV",
+  "capital": "ZAGREB"
+},{
+  "id": "CYP",
+  "capital": "NICOSIA"
+},{
+  "id": "CZE",
+  "capital": "PRAGUE"
+},{
+  "id": "DNK",
+  "capital": "COPENHAGEN"
+},{
+  "id": "EST",
+  "capital": "TALLINN"
+},{
+  "id": "FIN",
+  "capital": "HELSINKI"
+},{
+  "id": "FRA",
+  "capital": "PARIS"
+},{
+  "id": "DEU",
+  "capital": "BERLIN"
+},{
+  "id": "HUN",
+  "capital": "BUDAPEST"
+},{
+  "id": "ISL",
+  "capital": "REYKJAVIK"
+},{
+  "id": "IRL",
+  "capital": "DUBLIN"
+},{
+  "id": "ITA",
+  "capital": "ROME"
+},{
+  "id": "LIE",
+  "capital": "VADUZ"
+},{
+  "id": "LUX",
+  "capital": "LUXEMBOURG"
+},{
+  "id": "MDA",
+  "capital": "CHISINAU"
+},{
+  "id": "MCO",
+  "capital": "MONACO"
+},{
+  "id": "MNE",
+  "capital": "PODGORICA"
+},{
+  "id": "NLD",
+  "capital": "AMSTERDAM"
+},{
+  "id": "NOR",
+  "capital": "OSLO"
+},{
+  "id": "ROU",
+  "capital": "BUCHAREST"
+},{
+  "id": "RUS",
+  "capital": "MOSCOW"
+},{
+  "id": "SRB",
+  "capital": "BELGRADE"
+},{
+  "id": "SVK",
+  "capital": "BRATISLAVA"
+},{
+  "id": "SVN",
+  "capital": "LJUBLJANA"
+},{
+  "id": "ESP",
+  "capital": "MADRID"
+},{
+  "id": "SWE",
+  "capital": "STOCKHOLM"
+},{
+  "id": "CHE",
+  "capital": "BERN"
+},{
+  "id": "UKR",
+  "capital": "KIEV"
+},{
+  "id": "GBR",
+  "capital": "LONDON"
+},{
+  "id": "VAT",
+  "capital": "VATICAN CITY"
+},
+{
+  "id": "POL",
+  "capital": "WARSAW"
+},
+{
+  "id": "PRT",
+  "capital": "LISBON"
+},]
 
 // Configure series
 var polygonTemplate = polygonSeries.mapPolygons.template;
