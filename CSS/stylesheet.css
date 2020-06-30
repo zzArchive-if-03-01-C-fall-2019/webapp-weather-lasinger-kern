@@ -155,5 +155,8 @@ button {
 #mapdiv {
 	width: 1519px;
 	height: 800px;
-
+}
+#chartdiv {
+  width: 100%;
+  height: 350px;
 }
