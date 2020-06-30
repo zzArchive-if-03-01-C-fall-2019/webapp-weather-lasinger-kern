@@ -158,7 +158,7 @@ button {
 
 }
 #box {
-	background-color: green;
+	background-color: #65D4E9;
     position: relative;
     width: 450px;
     height: 450px;
@@ -166,6 +166,7 @@ button {
     border: 1px solid black;
     text-align: center;
     border-radius: 225px;
+		z-index: -5;
 }
 p.boxp {
 	margin-bottom: 10px;
