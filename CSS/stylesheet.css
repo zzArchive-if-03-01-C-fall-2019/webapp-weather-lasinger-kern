@@ -82,6 +82,11 @@ a.current-page {
 	color: black;
 	font-weight: bold;
 }
+a.webapp-page {
+	background-color: #535364;
+	color: white;
+	font-weight: bold;
+}
 q {
   padding-left: 70px;
   font-style: italic;

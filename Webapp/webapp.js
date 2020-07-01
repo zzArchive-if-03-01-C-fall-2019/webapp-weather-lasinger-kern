@@ -63,7 +63,7 @@ polygonSeries.data = [{
   "capital": "DUBLIN"
 },{
   "id": "IT",
-  "capital": "ROME"
+  "capital": "ROME, IT" //to avoid the city Rome in the US
 },{
   "id": "LI",
   "capital": "VADUZ"
