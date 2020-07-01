@@ -157,6 +157,7 @@ button {
 	resize: none;
 	max-width: 450px;
 	max-height: 300px;
+	font-family: Arial, sans-serif;
 }
 #commentButton {
 	padding: 12px 45px;
