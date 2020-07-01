@@ -36,7 +36,7 @@ a:hover {
 		text-align: center;
 		font-family: "Snowy";
 		padding-top: 72px;
-		padding-bottom: 40px;
+		padding-bottom: 0px;
 		text-shadow: 2px 2px;
 }
 .headline {
@@ -58,7 +58,7 @@ a:hover {
 	width: 250px;
 	position: relative;
 	left: 625px;
-
+	margin-bottom: 30px;
 	-o-animation:spin 4s linear infinite;
 	-webkit-animation:spin 4s linear infinite;
   -moz-animation:spin 4s linear infinite;
