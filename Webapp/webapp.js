@@ -1,19 +1,9 @@
-// Create map instance
 var chart = am4core.create("chartdiv", am4maps.MapChart)
-
-// Set map definition
 chart.geodata = am4geodata_worldLow;
-
-// Set projection
 chart.projection = new am4maps.projections.Miller();
-
-// Create map polygon series
 var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
-
-// Make map load polygon (like country names) data from GeoJSON
 polygonSeries.useGeodata = true;
 
-// Add some custom data
 polygonSeries.data = [{
   "id": "US",
   "capital": "Washington"
@@ -212,21 +202,84 @@ polygonSeries.data = [{
 var polygonTemplate = polygonSeries.mapPolygons.template;
 polygonTemplate.tooltipText = "{name}";
 polygonTemplate.fill = "{capital}";
-polygonTemplate.events.on("hit", function(ev) {
-  var data = ev.target.dataItem.dataContext;
-  var info = document.getElementById("info");
-  info.innerHTML = "<h3>" + data.name + " (" + data.id  + ")</h3>";
-  if (data.description) {
-    info.innerHTML += data.description;
+polygonTemplate.events.on("hit", function(event) {
+  const data = event.target.dataItem.dataContext;
+  if(data.capital) {
+    input.value = data.capital;
+    printAPIData();
   }
   else {
-    info.innerHTML += data.capital;
+    alert("Country not available");
   }
 });
 
 // Create hover state and set alternative fill color
 var hs = polygonTemplate.states.create("hover");
-hs.properties.fill = am4core.color("#5A9367");
+hs.properties.fill = am4core.color("#65D4E9");
+//chart.zoomControl = new am4maps.ZoomControl();
 
-// Add zoom control
-chart.zoomControl = new am4maps.ZoomControl();
+
+
+const input = document.getElementById("input");
+const button = document.getElementById("button");
+
+input.addEventListener('keyup', function(event) {
+  if(event.keyCode === 13) {
+    printAPIData();
+  }
+})
+button.addEventListener('click', printAPIData);
+
+
+
+function printAPIData() {
+  const apiKey = "119b6b49d1cba0373cac83388df19af2";
+
+  fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid='+apiKey)
+    .then(response => response.json())
+    .then(data => {
+      //reading Data from API
+      const nameValue = data['name'];
+      const descriptionValue = data['weather'][0]['description'];
+      const humidityValue = data['main']['humidity'];
+      const countryValue = data['sys']['country'];
+      const windspeedValue = data['wind']['speed'];
+      let temperatureValue = Math.round(data['main']['temp'] - 273,16); //Conversion from Kelvin to Celsius
+      let sunriseValue = new Date(data['sys']['sunrise']*1000); //Conversion from unix time to regular time
+      let sunsetValue = new Date(data['sys']['sunset']*1000); //Conversion from unix time to regular time
+
+      printData(nameValue, countryValue, descriptionValue, humidityValue, temperatureValue, windspeedValue, sunriseValue.getHours(), calculateSunMinute(sunriseValue), sunsetValue.getHours(), calculateSunMinute(sunsetValue));
+
+      input.value = "";
+    })
+    .catch(err => alert("Invalid city name"));
+}
+
+function calculateSunMinute(sunValue) {
+  let result = sunValue.getMinutes();
+
+  if(result < 10){
+    result = "0"+result;
+  }
+  return result;
+}
+
+function printData(nameValue, countryValue, descriptionValue, humidityValue, temperatureValue, windspeedValue, sunriseHour, sunriseMinute, sunsetHour, sunsetMinute) {
+  const name = document.getElementById("name");
+  const temperature = document.getElementById("temperature");
+  const description = document.getElementById("description");
+  const country = document.getElementById("country");
+  const humidity = document.getElementById("humidity");
+  const windspeed = document.getElementById("windspeed");
+  const sunrise = document.getElementById("sunrise");
+  const sunset = document.getElementById("sunset");
+
+  name.innerHTML = "Name: "+nameValue;
+  country.innerHTML = "Country: "+countryValue;
+  description.innerHTML = "Description: "+descriptionValue;
+  humidity.innerHTML = "Humidity: "+humidityValue+" %";
+  temperature.innerHTML = "Temperature: ~"+temperatureValue+" °C";
+  windspeed.innerHTML = "Windspeed: "+windspeedValue+" km/h";
+  sunrise.innerHTML = "Sunrise: "+sunriseHour+":"+sunriseMinute+" Uhr";
+  sunset.innerHTML = "Sunset: "+sunsetHour+":"+sunsetMinute+" Uhr";
+}
