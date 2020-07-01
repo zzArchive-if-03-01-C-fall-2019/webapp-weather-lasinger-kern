@@ -58,7 +58,7 @@ a:hover {
 	width: 250px;
 	position: relative;
 	left: 625px;
-	
+
 	-o-animation:spin 4s linear infinite;
 	-webkit-animation:spin 4s linear infinite;
   -moz-animation:spin 4s linear infinite;
@@ -149,6 +149,22 @@ button {
 	padding: 12px 45px;
 	font-size: 1.4em;
 	border: 2px solid black;
+}
+#commentInput {
+	position: relative;
+	left: 500px;
+	top: 100px;
+	resize: none;
+	max-width: 450px;
+	max-height: 300px;
+}
+#commentButton {
+	padding: 12px 45px;
+	border: 2px solid black;
+	position: relative;
+	left: 40px;
+	top: 150px;
+	width: 457px;
 }
 /*endregion*/
 /*region webapp output*/
