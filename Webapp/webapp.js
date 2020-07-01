@@ -213,11 +213,11 @@ polygonTemplate.events.on("hit", function(event) {
   }
 });
 
-// Create hover state and set alternative fill color
 var hs = polygonTemplate.states.create("hover");
 hs.properties.fill = am4core.color("#65D4E9");
-//chart.zoomControl = new am4maps.ZoomControl();
 
+chart.width = am4core.percent(100);
+chart.height = am4core.percent(100);
 
 
 const input = document.getElementById("input");
