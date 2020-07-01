@@ -156,7 +156,7 @@ button {
     float: right;
     resize: none;
     max-width: 431px;
-    max-height: 150px;
+    max-height: 100px;
     border: 2px solid black;
     font-size: 1.4em;
     padding: 12px;
@@ -165,6 +165,17 @@ button {
     margin-left: 1031px;
     margin-top: 5px;
     width: 458px;
+}
+#commentBox {
+	width: 430px;
+  height: 200px;
+	margin-right: 30px;
+	margin-top: 25px;
+  background: white;
+	border: 2px solid black;
+	float: right;
+	font-size: 1.4em;
+	padding: 12px;
 }
 /*endregion*/
 /*region webapp output*/
@@ -197,4 +208,8 @@ button {
 p.boxp {
 	margin-bottom: 10px;
 	margin-top: 15px;
+}
+p.comment {
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
