@@ -213,3 +213,6 @@ p.comment {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
+dt {
+	margin-left: 10px;
+}
